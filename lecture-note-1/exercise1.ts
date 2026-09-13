@@ -2,7 +2,7 @@ type createElementName = string
 type createElementAtributes = { [index:string]: string | boolean } | null
 type createElementChildren = string | HTMLElement | HTMLElement[]
 
-function createElement(
+export function createElement(
     name: createElementName,
     attributes?: createElementAtributes,
     ...children: createElementChildren[]
