@@ -18,9 +18,11 @@ export default function Counter(props: CounterProps):ReactElement{
     // não entendo o porquê
     return (
         <>
-            <p>{props.label}</p>
-            <p>{observedCounter}</p>
-            <button onClick={handleClick}>Increment</button>
+            <div>
+                <p>{props.label}</p>
+                <p>{observedCounter}</p>
+                <button onClick={handleClick}>Increment</button>
+            </div>  
         </>
     )
 }

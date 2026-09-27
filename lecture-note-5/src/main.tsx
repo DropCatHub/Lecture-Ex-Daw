@@ -2,14 +2,16 @@ import { createRoot } from "react-dom/client";
 import React from "react";
 import Counter from "./components/Counter";
 import InputBox from "./components/InputBox";
+import CounterList from "./components/CounterList";
 
 createRoot(document.getElementById("container")!).render(
+  <CounterList></CounterList>
   //<Counter label="Contador" onIncrement={(v) => console.log(v)} />
-    <InputBox 
+    /*<InputBox 
         label="Input Box" 
         maxLength= {5} 
         minLength={3} 
         onSubmit={(value:string) => console.log({value})}
     >
-    </InputBox>
+    </InputBox>*/
 );
